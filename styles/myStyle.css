@@ -1,0 +1,223 @@
+﻿@font-face {
+    font-family: 'felix007';
+    src: url('../font/felix007/fonts/felix007-medium-webfont.eot') format('embedded-opentype');
+    src: url('../font/felix007/fonts/felix007-medium-webfont.ttf') format('truetype');
+}
+
+body {
+    direction: rtl;
+    background-color: papayawhip;
+}
+
+.notActive{
+    cursor:not-allowed;
+    color:gray;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: papayawhip;
+}
+
+li {
+    float: right;
+    margin: 3px;
+    font-family: felix007;
+    font-size: larger;
+}
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: black;
+        text-align: center;
+
+        padding: 14px 70px;
+        text-decoration: none;
+    }
+
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: white;
+            text-decoration: underline;
+        }
+
+    li.dropdown {
+        display: inline-block;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: felix007;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 20px 20px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content-footer {
+    display: block;
+    position: relative;
+    min-width: 160px;
+    z-index: 1;
+    font-family: felix007;
+}
+.noPaddingLogo {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#logo {
+    height: 45px;
+    object-fit: contain;
+    display: table;
+}
+
+.footerUl {
+    background-color: white;
+}
+
+.footerUl li a, .footerUl li div, .footerUl li div a {
+    background-color: white;
+}
+
+.footerUl li a, .footerUl li div, .footerUl li div a {
+    background-color: white;
+}
+
+.footerUl li a:hover, .footerUl li div:hover, .footerUl li div a:hover {
+    background-color: papayawhip;
+}
+
+
+
+#headertaglin {
+    text-align: center;
+    font-family: felix007;
+    font-size: 48px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.headerImg {
+    background-image: url('../pics/קפה בדרך.png');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height:250px;
+    float: right;
+    padding: 5px;
+}
+
+.row {
+    padding:30px 0px 150px 50px;
+    margin-right: 150px;
+    clear: both;
+    display: table;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .1s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: peachpuff;
+    color: black;
+    font-size: 16px;
+    font-family: felix007;
+    padding: 16px 32px;
+    margin: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#header1{
+    font-family:felix007;
+    font-size:28px;
+    text-align:center;
+    position:relative;
+}
+#road {
+    padding-top:550px;
+    padding-right:0%;
+    width:120%;
+}
+
+.footer {
+    position: relative;
+    height: 350px;
+    background-image: url('../pictures/רקע פוטר.jpg');
+    text-align: center;
+}
+.footerElevator {
+    transform: translateY(-75px);
+}
+#footerLogo {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    padding: unset;
+}
+#textFooter {
+    font-family:felix007;
+    font-size:x-large;
+}
+.footerIcons {
+    display: table;
+    clear: both;
+    padding-right: 525px;
+}
+.icon {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    float: right;
+}

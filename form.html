@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>קפה בדרך - צור קשר</title>
+    <meta name="description" content="אתר קפה בדרך מסקר את תחום עגלות הקפה בארץ!" />
+    <meta name="keywords" content="עגלות קפה, קפה בדרך" />
+    <meta name="author" content="נועה אל חי ועדי שיינוביץ" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="icon" type="image/x-icon" href="pictures/לוגו אתר פוטר.png" width="100%">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link href="styles/form.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+
+            <ul>
+                <li><a href="index.html" class="noPaddingLogo"><img id="logo" src="pictures/לוגו אתר.png" /></a></li>
+                <li><a href="index.html">דף הבית</a></li>
+
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">העגלות שלנו</a>
+                    <div class="dropdown-content">
+                        <a href="north - Copy.html">צפון</a>
+                        <a href="center.html">מרכז</a>
+                        <a href="#" class="notActive">דרום</a>
+                    </div>
+                </li>
+                <li><a href="form.html">צור קשר</a>
+                <li><a href="about.html">אודות</a></li>
+                <li><a href="Map.html">מפת אתר</a></li>
+            </ul>
+        </nav>
+
+
+        <ul class="breadcrumb">
+            <li><a href="index.html">עמוד הבית</a></li>
+            <li><a href="form.html">צור קשר</a></li>
+        </ul>
+
+        <div class="headerImg">
+            <h1 id="headertaglin"> יש לך עגלת קפה ורוצה להצטרף לאתר? <br /> הירשמו כאן!</h1> <br />
+        </div>
+        <br />
+
+        <div id="road">
+            <img src="pictures/כביש הפרדה2.png" />
+        </div>
+        <br />
+    </header>
+
+    <main>
+
+        <form id="form">
+            <input type="hidden" id="myEmail" name="name" value="adidis97@gmail.com" />
+            <label for="first name">
+                *שם פרטי
+                <br />
+                <input id="Text1" type="text" placeholder="שם פרטי" required /><br />
+            </label>
+
+            <label for="last name">
+
+                *שם משפחה
+                <br />
+                <input id="Text1" type="text" placeholder="שם משפחה" required /><br />
+            </label>
+
+            <label for="phoneNum">
+                *מספר טלפון <br />
+                <input type="tel" name="usrtel" placeholder="מספר טלפון" required />
+            </label>
+
+            <br />
+
+            <label for="userEmail">
+                *כתובת מייל <br />
+                <input type="email" name="usremail" placeholder="כתובת מייל" required />
+            </label>
+            <br />
+
+            <fieldset id="location">
+                <legend>מיקום העגלה שלכם</legend>
+                <input type="radio" name="first" /> צפון <br />
+                <input type="radio" name="first" /> מרכז <br />
+                <input type="radio" name="first" /> דרום <br />
+            </fieldset>
+
+            כשר / לא כשר <br />
+            <select id="kosher">
+                <option value="1" selected>כשר</option>
+                <option value="1">לא כשר</option>
+            </select>
+
+            <br />
+            <label for="about">
+                ספרו לנו עליכם <br />
+                <textarea id="myTextArea" placeholder="ספרו לנו עליכם" rows="5"></textarea><br />
+            </label>
+            <br />
+            <input type="checkbox" id="agreement" checked /> אני מסכים/ה לתנאי השימוש
+            <br />
+
+            <label for="submit">
+                <input id="Submit1" type="submit" value="שליחה" />
+            </label>
+
+            <div id="feedback"></div>
+        </form>
+        <br />
+    </main>
+   
+
+    <footer>
+        <div class="footer">
+            <div class="footerElevator">
+                <img id="footerLogo" src="pictures/לוגו אתר פוטר.png" /><br />
+                <p id="textFooter">חפשו אותנו</p><br />
+                    <div class="footerIcons">
+                        <div class="icon"><img src="pictures/facebook icon.png" style="width:100%" alt="פייסבוק" /></div>
+                        <div class="icon"><img src="pictures/instagram icon.png" style="width:100%" alt="אינסטגרם" /></div>
+                        <div class="icon"><img src="pictures/twitter icon.png" style="width:100%" alt="טוויטר" /></div>
+
+                    </div>
+                <div class="navFooter">
+                    <ul class="footerUl">
+                        <li><a href="index.html">דף הבית</a></li>
+
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">העגלות שלנו</a>
+                            <div class="dropdown-content-footer">
+                                <a href="north - Copy.html">צפון</a>
+                                <a href="center.html">מרכז</a>
+                                <a href="#" class="notActive">דרום</a>
+                            </div>
+                        </li>
+                        <li><a href="form.html">צור קשר</a>
+                        <li><a href="about.html">אודות</a></li>
+                        <li><a href="Map.html">מפת אתר</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
